@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="bs/icons/bootstrap-icons.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/general.css" />
+  <title>The Talos Principle</title>
+</head>
+
+<body class="text-white bg-secondary">
+  <header id="header" class="container-fluid border-primary position-fixed bg-black shadow bg-opacity-75 pb-2">
+    <h1 class="fs-1 f-Talos">The Talos Principle</h1>
+
+    <nav>
+      <ul class="navbar-nav fs-3 flex flex-row justify-content-around">
+        <ol class="nav-item bg-black bg-opacity-25">
+          <a href="index.html" class="nav-link">
+            <i class="bi bi-house-fill"></i>
+            Inicio
+          </a>
+        </ol>
+        <ol class="nav-item bg-black bg-opacity-25">
+          <a href="pages/OtrosJuegos.html" class="nav-link">
+            <i class="bi bi-controller"></i>
+            Otros Juegos
+            <i class="bi bi-journal-arrow-up"></i>
+          </a>
+        </ol>
+      </ul>
+    </nav>
+  </header>
+
+  <header>
+    <ul class="offcanvas offcanvas-start bg-white bg-opacity-75" tabindex="-1" id="offcanvas-form" aria-labelledby="Fomulario">
+      <ol class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasLabel"> Formulario </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar Formulario"></button>
+      </ol>
+      <ol class="offcanvas-body">
+        <section class="bg-black bg-opacity-25 h-100 w-100 border-5">
+          <article class="bg-black bg-opacity-25 h-100 w-100 border-5">
+            <form id="formContact" action="logueo.php" method="post">
+              <ul>
+                <ol class="text-center">
+                  <label class="foem-label fs-4 f-Lumel" for="usuario">Nombre de usuario<i class="bi bi-person"></i> </label>
+                  <input class="form-control shadow" type="text" id="usuario" />
+                </ol>
+                <ol class="text-center">
+                  <label class="foem-label fs-4 f-Lumel" for="usuario">Correo Electronico<i class="bi bi-envelope-at"></i> </label>
+                  <input class="form-control shadow" type="text" id="correo" />
+                </ol>
+                <ol class="text-center">
+                  <label class="foem-label fs-4 f-Lumel" for="usuario"> Contraseña
+                    <button id="OpenCloseEyes">
+                      <i id="eye-open" class="bi bi-eye-fill"></i>
+                      <i id="eye-close" class="bi bi-eye-slash"></i>
+                    </button>
+                  </label>
+                  <input class="form-control shadow" type="password" id="pass" value="" />
+                </ol>
+                <ol>
+                  <button type="submit" class="btn btn-primary shadow">Registrarme</button>
+                </ol>
+              </ul>
+            </form>
+          </article>
+        </section>
+      </ol>
+    </ul>
+  </header>
+
+  <main class="container">
+    <ul class="tab-content bg-black bg-opacity-25 h-100 w-100 border-5">
+
+      <!------- NavTAB ------->
+
+      <ol>
+        <nav class="bg-black shadow bg-opacity-50">
+          <ul class="nav nav-tabs">
+            <ol class="f-Cinzel fs-4">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-selected="true" aria-controls="nav-home">
+                inicio
+              </button>
+            </ol>
+            <ol class="f-Cinzel fs-4">
+              <button class="nav-link" id="nav-talos1-tab" data-bs-toggle="tab" data-bs-target="#nav-talos1" role="tab" aria-selected="false" aria-controls="nav-talos1">
+                The Talos Principle I
+              </button>
+            </ol>
+            <ol class="f-Cinzel fs-4">
+              <button class="nav-link" id="nav-talos2-tab" data-bs-toggle="tab" data-bs-target="#nav-talos2" role="tab" aria-selected="false" aria-controls="nav-talos2">
+                The Talos Principle II
+              </button>
+            </ol>
+          </ul>
+        </nav>
+      </ol>
+
+      <!------- Pagina HOME ------->
+
+
+      <ol id="nav-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <section>
+          <!-- carousel -->
+
+          <article id="carouselHome" class="carousel slide" data-ride="carousel">
+            <fieldset class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </fieldset>
+            <ul class="carousel-inner">
+              <ol class="carousel-item active">
+                <figure>
+                  <img id="c-home-0" class="d-block h-100" src="img/home/c-0.jpg" alt="maquina acariciando gato asustado" />
+                  <figcaption class="carousel-caption d-none d-md-block shadow bg-black bg-opacity-75">
+                    <span class="fs-4">Su iconica imagen</span>
+                    <p>Llamando la atención de muchos, la unión de realidad y máquina impactó lo suficiente para atraer interesados.</p>
+                  </figcaption>
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-home-1" class="d-block h-100" src="img/home/c-5.png" alt="Logo icono mostrando destacados del juego" />
+                  <figcaption class="carousel-caption d-none d-md-block shadow bg-black bg-opacity-75">
+                    <span class="fs-4">Ganador de multiples premios</span>
+                    <p>Pasando por múltiples filtros, puede ser considerado de los mejores y más trabajados juegos con áltas calificaciones y estándares.</p>
+                  </figcaption>
+                </figure>
+              </ol>
+            </ul>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+
+          <article>
+            <p>
+              <span lang="en" class="f-Talos">The talos principle</span> es un videojuego creado por la empresa valve, quien fundó y se expandió a steam, es
+              uno de sus clásicos de <span class="f-Lumel">puzzles</span>, con toques de <span class="f-Lumel">acción</span>,
+              <span class="f-Lumel">parkour</span> y <span class="f-Lumel">psicología</span> del cual hará cuestionar todas tus desiciones, haciendo dudar de
+              la existencia del personaje que utilizas, cruzando múltiples veces la "4ta dimensión", hablando directo al jugador, mientras puedes interpretar
+              al robot o a ti mismo como jugador.
+            </p>
+            <p></p>
+          </article>
+          <article>
+            <p>
+              Si amas los desafíos intelectuales, la exploración filosófica y las historias profundas, <span class="f-Talos">The Talos Principle</span> es una experiencia que no
+              puedes dejar pasar. Este juego no solo te invita a resolver ingeniosos <span class="f-Lumel">puzzles</span> que pondrán a prueba tu lógica y creatividad, sino que
+              también te sumerge en un universo donde cada decisión y cada descubrimiento te harán reflexionar sobre la conciencia, la existencia y el sentido de la vida misma.
+            </p>
+            <p>
+              Con una ambientación envolvente, una narrativa cautivadora y una jugabilidad que equilibra perfectamente el reto y la satisfacción, <span class="f-Talos">The Talos
+                Principle</span> te mantendrá intrigado desde el primer momento. Tanto si eres fanático de los juegos de acertijos como si buscas una historia que te haga
+              cuestionar tu propia realidad, aquí encontrarás una aventura única que trasciende el entretenimiento y deja huella.
+            </p>
+            <p>
+              Atrévete a embarcarte en este viaje, descubre los secretos ocultos y demuestra tu ingenio. ¡No te arrepentirás de sumergirte en uno de los títulos más aclamados y
+              profundos de su género!
+            </p>
+          </article>
+        </section>
+
+        <section class="w-100">
+          <article>
+            <a class="btn btn-primary" role="button" data-bs-toggle="offcanvas" href="#offcanvas-form" aria-controls="offcanvas-form">
+              <i class="bi bi-ui-checks"></i> Formulario <i class="bi bi-ui-checks"></i>
+            </a>
+          </article>
+        </section>
+
+        <section class="bg-black bg-opacity-25 h-100 border-5">
+          <article>
+            <h2 class="f-Lumel">Créditos de The Talos Principle</h2>
+            <ul>
+              <ol class="fs-3 f-Lumel">
+                Desarrollador principal:
+                <span class="fs-5 f-Cinzel">Croteam</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Diseñadores de juego:
+                <span class="fs-5 f-Cinzel">Alen Ladavac</span>,
+                <span class="fs-5 f-Cinzel">Davor Hunski</span>,
+                <span class="fs-5 f-Cinzel">Goran Horvatic</span>,
+                <span class="fs-5 f-Cinzel">Josip Rukavina</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Programadores principales:
+                <span class="fs-5 f-Cinzel">Dean Sekulic</span>,
+                <span class="fs-5 f-Cinzel">Davor Hunski</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Escritores:
+                <span class="fs-5 f-Cinzel">Tom Jubert</span>,
+                <span class="fs-5 f-Cinzel">Jonas Kyratzes</span>,
+                <span class="fs-5 f-Cinzel">Verena Kyratzes</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Diseñadores de nivel:
+                <span class="fs-5 f-Cinzel">Sasa Rasic</span>,
+                <span class="fs-5 f-Cinzel">Goran Subotic</span>,
+                <span class="fs-5 f-Cinzel">Josip Rukavina</span>,
+                <span class="fs-5 f-Cinzel">Davor Hunski</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Artistas:
+                <span class="fs-5 f-Cinzel">Damjan Mravunac</span>,
+                <span class="fs-5 f-Cinzel">Zvonimir Miksic</span>,
+                <span class="fs-5 f-Cinzel">Davor Veljacic</span>,
+                <span class="fs-5 f-Cinzel">Anton Kiseljak</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Animadores:
+                <span class="fs-5 f-Cinzel">Nebojsa Zunic</span>,
+                <span class="fs-5 f-Cinzel">Marko Grgic</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Compositor musical:
+                <span class="fs-5 f-Cinzel">Damjan Mravunac</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Diseñador de sonido:
+                <span class="fs-5 f-Cinzel">Damjan Mravunac</span>
+              </ol>
+            </ul>
+
+            <h3>Equipo Adicional</h3>
+            <ul>
+              <ol class="fs-3 f-Lumel">
+                Control de calidad:
+                <span class="fs-5 f-Cinzel">Filip Puric</span>,
+                <span class="fs-5 f-Cinzel">Igor Tkalec</span>,
+                <span class="fs-5 f-Cinzel">Luka Mrkoci</span>
+              </ol>
+              <ol class="fs-3 f-Lumel">
+                Agradecimientos especiales:
+                <span class="fs-5 f-Cinzel">Todo el equipo de Croteam y Devolver Digital.</span>
+              </ol>
+            </ul>
+          </article>
+        </section>
+      </ol>
+
+      <!------- Pagina Talos1 ------->
+
+      <ol id="nav-talos1" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-talos1-tab" tabindex="1">
+        <!-- carousel -->
+        <section>
+          <h2 class="f-Talos">El principio de todo</h2>
+          <article id="carouselOne" class="carousel slide shadow" data-ride="carousel">
+            <fieldset class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselOne" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </fieldset>
+            <ul class="carousel-inner">
+              <ol class="carousel-item active">
+                <figure>
+                  <img id="c-talos1-0" class="d-block h-100" src="img/talos1/c-1.jpg" alt="maquina parecida a camara antigua, inhibiendo objeto rojo" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos1-1" class="d-block h-100" src="img/talos1/c-2.webp" alt="visaulizando laser interconectado por objeto" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos1-2" class="d-block h-100" src="img/talos1/c-3.webp" alt="maquina parecida a camara antigua en primer plano" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos1-3" class="d-block h-100" src="img/talos1/c-4.jpg" alt="multiples elementos caóticos de generador y laser" />
+                </figure>
+              </ol>
+            </ul>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+
+          <article>
+            <figure class="card bg-opacity-10 shadow">
+              <figure>
+                <img class="card-img-top" src="img/talos1/t1-steam.png" />
+              </figure>
+              <figcaption class="card-body">
+                <h3 class="card-title">Ya disponible en steam</h3>
+                <nav>
+                  <a href="https://store.steampowered.com/app/257510/The_Talos_Principle/"> <i class="bi bi-steam text-black">Steam</i> </a>
+                </nav>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!--Panel nav-tab Talos1-->
+          <article class="w-100">
+            <nav class="bg-black shadow bg-opacity-50">
+              <ul class="nav nav-tabs">
+                <ol class="f-Cinzel fs-5">
+                  <button class="nav-link active" id="Info1-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" data-bs-target="#Info1" aria-controls="Info1">
+                    Info
+                  </button>
+                </ol>
+                <ol class="f-Cinzel fs-5">
+                  <button class="nav-link" id="Requisitos1-tab" data-bs-toggle="tab" data-bs-target="#Requisitos1" type="button" role="tab" aria-selected="false"
+                    aria-controls="Requisitos1">
+                    Requisitos
+                  </button>
+                </ol>
+              </ul>
+            </nav>
+          </article>
+          <article>
+            <ul class="tab-content">
+              <ol id="Info1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="Info1-tab" tabindex="0">
+                <p><span lang="en" class="f-Talos">The Talos Principle</span> es un aclamado videojuego de puzles en primera persona, desarrollado por Croteam y lanzado en 2014. No
+                  es
+                  solo un juego de rompecabezas ingeniosos, sino una profunda exploración filosófica sobre la inteligencia, la conciencia, la humanidad y el significado en un mundo
+                  que
+                  se desvanece.</p>
+
+                <p>En The Talos Principle, el jugador asume el papel de un androide sin nombre que despierta en un entorno sereno, una mezcla de ruinas antiguas, paisajes naturales
+                  exuberantes y tecnología futurista. Una voz incorpórea que se hace llamar **Elohim** (un nombre bíblico para Dios) instruye al androide para que explore estos
+                  mundos
+                  y resuelva una serie de acertijos cada vez más complejos, que implican manipular rayos de luz, bloqueadores, ventiladores y dispositivos de grabación de tiempo
+                  para
+                  recolectar "sellos" en forma de tetrominos. Elohim promete vida eterna si el androide obedece sus órdenes, pero advierte encarecidamente contra la ascensión a una
+                  torre misteriosa que se alza en el centro de los mundos.</p>
+
+                <p>La jugabilidad de The Talos Principle se centra en la resolución de estos intrincados puzles lógicos, que requieren pensamiento lateral, observación cuidadosa y
+                  una
+                  comprensión de las mecánicas del juego. A medida que el jugador avanza, también descubre terminales de computadora que contienen fragmentos de textos filosóficos,
+                  grabaciones de audio y conversaciones con una inteligencia artificial escéptica llamada **Milton**. Estos textos y diálogos plantean preguntas fundamentales sobre
+                  la
+                  existencia, el libre albedrío, la moralidad, la creación y el propósito de la vida.</p>
+
+                <p>La narrativa de The Talos Principle se revela de manera gradual y sutil. Se sugiere que la humanidad se enfrentó a su extinción debido a un virus global liberado
+                  del
+                  permafrost derretido. Antes de su desaparición, un grupo de científicos inició el "Programa de Vida Extendida" (EL, por sus siglas en inglés) para preservar el
+                  conocimiento y la esencia de la humanidad. La simulación en la que se encuentra el androide es un campo de pruebas para nuevas inteligencias artificiales,
+                  diseñadas
+                  para demostrar no solo inteligencia, sino también libre albedrío y capacidad para desafiar la autoridad, con la esperanza de que una de ellas pueda,
+                  eventualmente,
+                  heredar el mundo.</p>
+
+                <p>The Talos Principle fue muy bien recibido por la crítica, elogiado por su diseño de puzles inteligente, su atmósfera envolvente y, sobre todo, por su profunda y
+                  estimulante narrativa filosófica. El juego invita a los jugadores a reflexionar sobre quiénes son, cuál es su propósito y qué significa ser verdaderamente
+                  consciente.
+                </p>
+              </ol>
+              <ol id="Requisitos1" class="tab-pane fade" role="tabpanel" aria-labelledby="Requisitos1-tab" tabindex="1">
+                <h2>Requisitos</h2>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Minimos</th>
+                      <th scope="col">Recomendados</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">SO:</span> </th>
+                      <td>Windows 7</td>
+                      <td>Windows 7 64-bit</td>
+                    </tr>
+                    <tr>
+                      <th>Processador:</th>
+                      <td>Dual-core 2.0 GHz</td>
+                      <td>Dual-core 3.0 GHz</td>
+                    </tr>
+                    <tr>
+                      <th>Memoria (RAM):</th>
+                      <td>2GB</td>
+                      <td>4GB</td>
+                    </tr>
+                    <tr>
+                      <th>Placa de video:</th>
+                      <td>DirectX 11 class GPU with 1GB VRAM (nVidia GeForce 480 GTX, AMD Radeon HD 5870)</td>
+                      <td>AMD RX 480 or NVIDIA GTX 970</td>
+                    </tr>
+                    <tr>
+                      <th>DirectX:</th>
+                      <td>Version 9.0c</td>
+                      <td>Version 9.0c</td>
+                    </tr>
+                    <tr>
+                      <th>Almacenamiento:</th>
+                      <td>5 GB espacio disponible</td>
+                      <td>8 GB espacio disponible</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </ol>
+            </ul>
+          </article>
+        </section>
+      </ol>
+
+      <!------- Pagina 2 ------->
+
+      <ol id="nav-talos2" class="tab-content tab-pane fade" role="tabpanel" aria-labelledby="nav-talos2-tab" tabindex="2">
+        <section>
+          <h2 class="f-Talos">The Talos Principle 2</h2>
+          <!-- carousel -->
+
+          <article id="carouselTwo" class="carousel slide" data-ride="carousel">
+            <fieldset class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </fieldset>
+            <ul class="carousel-inner">
+              <ol class="carousel-item active">
+                <figure>
+                  <img id="c-talos2-0" class="d-block h-100" src="img/talos2/c-0.jpg" alt="Robot (tu) mirando escaleras subiendo una montaña" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos2-1" class="d-block h-100" src="img/talos2/c-1.webp" alt="inter-union potales y laseres" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos2-2" class="d-block h-100" src="img/talos2/c-2.jpg" alt="Robot (tu) tercera persona" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos2-3" class="d-block h-100" src="img/talos2/c-3.avif" alt="Robot (tu) tercera persona mirando estructuras" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos2-4" class="d-block h-100" src="img/talos2/c-4.jpg" alt="Ciudad gigante con estructura espiral de caminos" />
+                </figure>
+              </ol>
+              <ol class="carousel-item">
+                <figure>
+                  <img id="c-talos2-5" class="d-block h-100" src="img/talos2/c-5.jpg" alt="Montaña rusa donde mano parece estar por intervenir" />
+                </figure>
+              </ol>
+            </ul>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+
+          <article>
+            <figure class="card bg-opacity-10">
+              <figure>
+                <img class="card-img-top" src="img/talos2/t2-steam.png" />
+              </figure>
+              <figcaption class="card-body">
+                <h3 class="card-title">Ya disponible en steam</h3>
+                <nav>
+                  <a href="https://store.steampowered.com/app/835960/The_Talos_Principle_2/"><i class="bi bi-steam text-black">Steam</i></a>
+                </nav>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!--Panel nav-tab Talos2-->
+          <article class="w-100">
+            <nav class="bg-black shadow bg-opacity-50">
+              <ul class="nav nav-tabs">
+                <ol class="f-Cinzel fs-5">
+                  <button class="nav-link active" id="Info2-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" data-bs-target="#Info2" aria-controls="Info2">
+                    Info
+                  </button>
+                </ol>
+                <ol class="f-Cinzel fs-5">
+                  <button class="nav-link" id="Requisitos2-tab" data-bs-toggle="tab" data-bs-target="#Requisitos2" type="button" role="tab" aria-selected="false"
+                    aria-controls="Requisitos2">
+                    Requisitos
+                  </button>
+                </ol>
+              </ul>
+            </nav>
+          </article>
+
+          <article>
+
+            <ul class="tab-content">
+              <ol id="Info2" class="tab-pane fade show active" role="tabpanel" aria-labelledby="Info2-tab" tabindex="0">
+                <p><span lang="en" class="f-Talos">The Talos Principle</span> es un aclamado videojuego de puzles en primera persona, desarrollado por Croteam y lanzado en 2014. No
+                  es
+                  solo un juego de rompecabezas ingeniosos, sino una profunda exploración filosófica sobre la inteligencia, la conciencia, la humanidad y el significado en un mundo
+                  que
+                  se desvanece.</p>
+
+                <p>En The Talos Principle, el jugador asume el papel de un androide sin nombre que despierta en un entorno sereno, una mezcla de ruinas antiguas, paisajes naturales
+                  exuberantes y tecnología futurista. Una voz incorpórea que se hace llamar **Elohim** (un nombre bíblico para Dios) instruye al androide para que explore estos
+                  mundos
+                  y resuelva una serie de acertijos cada vez más complejos, que implican manipular rayos de luz, bloqueadores, ventiladores y dispositivos de grabación de tiempo
+                  para
+                  recolectar "sellos" en forma de tetrominos. Elohim promete vida eterna si el androide obedece sus órdenes, pero advierte encarecidamente contra la ascensión a una
+                  torre misteriosa que se alza en el centro de los mundos.</p>
+
+                <p>La jugabilidad de The Talos Principle se centra en la resolución de estos intrincados puzles lógicos, que requieren pensamiento lateral, observación cuidadosa y
+                  una
+                  comprensión de las mecánicas del juego. A medida que el jugador avanza, también descubre terminales de computadora que contienen fragmentos de textos filosóficos,
+                  grabaciones de audio y conversaciones con una inteligencia artificial escéptica llamada **Milton**. Estos textos y diálogos plantean preguntas fundamentales sobre
+                  la
+                  existencia, el libre albedrío, la moralidad, la creación y el propósito de la vida.</p>
+
+                <p>La narrativa de The Talos Principle se revela de manera gradual y sutil. Se sugiere que la humanidad se enfrentó a su extinción debido a un virus global liberado
+                  del
+                  permafrost derretido. Antes de su desaparición, un grupo de científicos inició el "Programa de Vida Extendida" (EL, por sus siglas en inglés) para preservar el
+                  conocimiento y la esencia de la humanidad. La simulación en la que se encuentra el androide es un campo de pruebas para nuevas inteligencias artificiales,
+                  diseñadas
+                  para demostrar no solo inteligencia, sino también libre albedrío y capacidad para desafiar la autoridad, con la esperanza de que una de ellas pueda,
+                  eventualmente,
+                  heredar el mundo.</p>
+
+                <p>The Talos Principle fue muy bien recibido por la crítica, elogiado por su diseño de puzles inteligente, su atmósfera envolvente y, sobre todo, por su profunda y
+                  estimulante narrativa filosófica. El juego invita a los jugadores a reflexionar sobre quiénes son, cuál es su propósito y qué significa ser verdaderamente
+                  consciente.
+                </p>
+              </ol>
+              <ol id="Requisitos2" class="tab-pane fade" role="tabpanel" aria-labelledby="Requisitos2-tab" tabindex="1">
+                <h2>Requisitos</h2>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Minimos</th>
+                      <th scope="col">Recomendados</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">SO:</span> </th>
+                      <td>64-bit Windows 10 (o mejor)</td>
+                      <td>64-bit Windows 10 (o mejor)</td>
+                    </tr>
+                    <tr>
+                      <th>Processador:</th>
+                      <td>4 core CPU @ 2.5 GHz (AMD Ryzen 5, Intel core i3/i5)</td>
+                      <td> 6 or 8 core CPU @ 3.0 GHz (AMD Ryzen 7, Intel core i5/i7)</td>
+                    </tr>
+                    <tr>
+                      <th>Memoria (RAM):</th>
+                      <td>8GB</td>
+                      <td>16GB</td>
+                    </tr>
+                    <tr>
+                      <th>Placa de video:</th>
+                      <td>4 GB VRAM; Radeon RX 470, GeForce GTX 970, Intel Arc A580</td>
+                      <td>8+ GB VRAM; Radeon RX 6800, GeForce RTX 3070, Intel Arc B580</td>
+                    </tr>
+                    <tr>
+                      <th>DirectX:</th>
+                      <td>Version 12</td>
+                      <td>Version 12</td>
+                    </tr>
+                    <tr>
+                      <th>Almacenamiento:</th>
+                      <td>75 GB espacio disponible</td>
+                      <td>75 GB espacio disponible</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </ol>
+            </ul>
+          </article>
+        </section>
+      </ol>
+  </main>
+
+  <footer class="container-fluid bg-black opacity-50 p-3">
+    <span lang="en" class="d-flex align-items-center">Created by:
+      <a href="mailto:gabyfroso@gmail.com" class="p-1 px-4 fs-4" id="author"> Gabyfroso <i class="bi bi-envelope-at"></i> </a>
+    </span>
+
+  </footer>
+  <script src="js/script-1.js"></script>
+  <script src="bs/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
