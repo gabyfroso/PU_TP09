@@ -8,5 +8,5 @@ Me he tardado más de lo normal por no leer todo el tp antes de comenzar, usé t
 ## PÁGINA
 Si por alguna razón no carga, intenta ingresar a /index.html
 
-https://gabyfroso.github.io/PU_TP09/index.html
+https://gabyfroso.github.io/tp09labo1frosonihugogabriel/index.html
  
